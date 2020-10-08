@@ -3,10 +3,10 @@ import { Provider } from 'react-redux';
 
 import store from "./store/index";
 
-const ReduxProvider = (props) => (
+const StoreProvider = (props) => (
     <Provider store={store}>
         {props.children}
     </Provider>
 );
 
-export default ReduxProvider;
+export default StoreProvider;

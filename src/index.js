@@ -1,16 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import ReduxProvider from './redux/provider'
-import Router from './routing/router';
+import * as serviceWorker from './serviceWorker';
 
-//import App from './App';
+import './css/tailwind.output.css';
+
+import StoreProvider from './redux/provider'
+import Router from './routing/router';
 
 ReactDOM.render(
 	<React.StrictMode>
-		<ReduxProvider>
+		<StoreProvider>
 			<Router />
-		</ReduxProvider>
+		</StoreProvider>
 	</React.StrictMode>,
 	document.getElementById('root')
 );
@@ -18,5 +20,4 @@ ReactDOM.render(
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
-// import * as serviceWorker from './serviceWorker';
-// serviceWorker.unregister();
+serviceWorker.unregister();

@@ -4,7 +4,7 @@ import { Switch } from 'react-router-dom';
 import routes from './routes';
 import PrivateRoute from './private-route';
 
-import DashboardLayout from '../layouts/dashboard-layout';
+import DashboardLayout from '../layouts/home';
 
 import { Error404 } from '../views/errors';
 
