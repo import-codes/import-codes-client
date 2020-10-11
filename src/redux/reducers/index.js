@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
 
-import notificator from './NotificatorReducer';
+import notificator from './notificator-reducer';
 
 export default combineReducers({
     notificator,
