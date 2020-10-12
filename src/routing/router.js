@@ -1,10 +1,10 @@
 import React from 'react';
 import { Switch, BrowserRouter, Route, Redirect } from 'react-router-dom';
 
-import routes from './routes';
+import routes from '../constants/routes';
 import PrivateRoute from './private-route';
 
-import { Login, Home } from '../views';
+import { UserHome, Login, Home } from '../views';
 import { Error404 } from '../views/errors';
 
 export default function Router() {
@@ -15,9 +15,10 @@ export default function Router() {
                 <Route exact path={routes.login.path} component={Login} />
 
                 {/* Private routes */}
-                {/* <PrivateRoute exact path={routes.root.path} component={Dashboard} /> */}
-                {/* <PrivateRoute path={routes.dashboard.path} component={Dashboard} /> */}
                 <PrivateRoute exact path={routes.root.path} component={Home} />
+
+                <PrivateRoute exact path={routes.root.path} component={UserHome} />
+                <PrivateRoute path={routes.dashboard.path} component={UserHome} />
 
                 {/* 404 in all other cases */}
                 <Route exact path={routes.error404.path} component={Error404} />
@@ -26,11 +27,3 @@ export default function Router() {
         </BrowserRouter>
     );
 }
-
-/**
-= <PrivateRoute exact path={routes.branchOffices.path} component={BranchOffices} />
-        <PrivateRoute path={routes.branchOfficesNew.path} component={NewBranchOffices} />
-
-        <PrivateRoute exact path={routes.roles.path} component={Roles} />
-        <PrivateRoute exact path={routes.rolesNew.path} component={NewRoles} />
- */
