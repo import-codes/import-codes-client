@@ -13,19 +13,38 @@ class Home extends React.Component {
 
         this.state = {
             authorized: false,
-            search: ''
+            searchContent: ''
         }
+    }
+
+    handleSearchBlur = (event) => {
+
+    }
+
+    handleSearchKeyPress = (event) => {
+        if (event.key === 'Enter') {
+            console.log('Do search...');
+        }
+    }
+
+    handleSearchChange = (event) => {
+        this.setState({ searchContent: event.target.value });
     }
 
     render() {
         return (
-            <div>
+            <div className="antialiased">
                 <Navbar>
-                    <div className='flex items-center h-full'>
-                        <NavbarLogo logo={'asd'} />
-                        <NavbarSearch search={this.state.search} />
+                    <div className='flex h-full'>
+                        <NavbarLogo />
+                        <NavbarSearch
+                            searchContent={this.state.searchContent}
+                            onBlur={this.handleSearchBlur}
+                            onKeyPress={this.handleSearchKeyPress}
+                            onChange={this.handleSearchChange}
+                        />
                     </div>
-                    <div className='flex items-center h-full text-sm'>
+                    <div className='flex items-center h-full'>
                         hola
                     </div>
                 </Navbar>

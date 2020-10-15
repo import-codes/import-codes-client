@@ -1,12 +1,13 @@
 import React from 'react';
 
+import { ReactComponent as Logo } from '../assets/import_codes.svg';
+
 class NavbarLogo extends React.Component {
     render() {
         return (
-            <div className="flex items-center text-center h-full w-48 border-r border-grey-dark">
-                <span className="w-full text-sm uppercase font-extrabold">
-                    asdasdasd
-                </span>
+            <div className="flex items-center px-10">
+                <Logo className="h-10 w-10" />
+                <h1 className="font-mono text-2xl ml-10">import codes</h1>
             </div>
         );
     }
