@@ -21,6 +21,8 @@ export default (state = {}, action) => {
             state = { ...state, show_message: false, type: null, message: null };
             break;
         }
+        default:
+            break;
     }
     return state;
 }
