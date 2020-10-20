@@ -38,18 +38,20 @@ class Home extends React.Component {
         return (
             <div className='antialiased'>
                 <Navbar>
-                    <NavbarContainer>
+                    <NavbarContainer className='flex-shrink-0 w-1/5 px-5'>
                         <NavbarLogo />
                         <NavbarTitle title='import codes' />
+                    </NavbarContainer>
+                    <NavbarContainer className='justify-between w-full px-5'>
                         <NavbarSearch
                             searchContent={this.state.searchContent}
                             onBlur={this.handleSearchBlur}
                             onKeyPress={this.handleSearchKeyPress}
                             onChange={this.handleSearchChange}
                         />
-                    </NavbarContainer>
-                    <NavbarContainer>
-                        <img class='inline-block h-10 w-10 rounded-full text-white shadow-solid object-center object-cover' src='assets/img/box.png' alt='' />
+                        <div>
+                            <img class='inline-block h-10 w-10 rounded-full text-white shadow-solid object-center object-cover' src='assets/img/box.png' alt='' />
+                        </div>
                     </NavbarContainer>
                 </Navbar>
                 <div className='flex'>
