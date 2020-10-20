@@ -8,5 +8,5 @@ const styles = {
 export default function Button(props) {
     const classes = styles[props.style] || styles.default;
 
-    return <button type="button" class={classes}>{props.text}</button>
+    return <button type='button' class={classes}>{props.text}</button>
 }

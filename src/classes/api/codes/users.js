@@ -1,4 +1,4 @@
-import CodesApi from "./codes-api";
+import CodesApi from './codes-api';
 
 export default class Users {
     static list(params, callback) {

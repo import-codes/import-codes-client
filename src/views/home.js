@@ -36,7 +36,7 @@ class Home extends React.Component {
 
     render() {
         return (
-            <div className="antialiased">
+            <div className='antialiased'>
                 <Navbar>
                     <NavbarContainer>
                         <NavbarLogo />
@@ -49,7 +49,7 @@ class Home extends React.Component {
                         />
                     </NavbarContainer>
                     <NavbarContainer>
-                        hola
+                        <img class='inline-block h-10 w-10 rounded-full text-white shadow-solid object-center object-cover' src='assets/img/box.png' alt='' />
                     </NavbarContainer>
                 </Navbar>
                 <div className='flex'>
@@ -66,16 +66,16 @@ class Home extends React.Component {
                             </Link>
                         </div>
                     </Sidebar>
-                    <SnippetContainer>  
-                            <SnippetCard title="print some text" description="1 This code prints some text to STDOUT" image={'assets/img/box.png'} />
-                            <SnippetCard title="print some text" description="2 This code prints some text to STDOUTThis code prints some text to STDOUTThis code prints some text to STDOUTThis code prints some text to STDOUTThis code prints some text to STDOUTThis code prints some text to STDOUTThis code prints some text to STDOUT" image={'assets/img/box.png'} />
-                            <SnippetCard title="print some text" description="3 This code prints some text to STDOUT" image={'assets/img/box.png'} />
-                            <SnippetCard title="print some text" description="4 This code prints some text to STDOUT" image={'assets/img/box.png'} />
-                            <SnippetCard title="print some text" description="5 This code prints some text to STDOUT" image={'assets/img/box.png'} />
-                            <SnippetCard title="print some text" description="6 This code prints some text to STDOUT" image={'assets/img/box.png'} />
-                            <SnippetCard title="print some text" description="7 This code prints some text to STDOUT" image={'assets/img/box.png'} />
-                            <SnippetCard title="print some text" description="8 This code prints some text to STDOUT" image={'assets/img/box.png'} />
-                            <SnippetCard title="print some text" description="9 This code prints some text to STDOUT" image={'assets/img/box.png'} />
+                    <SnippetContainer>
+                        <SnippetCard title='Print text' description='This code prints text to debugger console' image={'assets/img/box.png'} />
+                        <SnippetCard title='print some text' description='2 This code prints some text to STDOUTThis code prints some text to STDOUTThis code prints some text to STDOUTThis code prints some text to STDOUTThis code prints some text to STDOUTThis code prints some text to STDOUTThis code prints some text to STDOUT' image={'assets/img/box.png'} />
+                        <SnippetCard title='print some text' description='3 This code prints some text to STDOUT' image={'assets/img/box.png'} />
+                        <SnippetCard title='print some text' description='4 This code prints some text to STDOUT' image={'assets/img/box.png'} />
+                        <SnippetCard title='print some text' description='5 This code prints some text to STDOUT' image={'assets/img/box.png'} />
+                        <SnippetCard title='print some text' description='6 This code prints some text to STDOUT' image={'assets/img/box.png'} />
+                        <SnippetCard title='print some text' description='7 This code prints some text to STDOUT' image={'assets/img/box.png'} />
+                        <SnippetCard title='print some text' description='8 This code prints some text to STDOUT' image={'assets/img/box.png'} />
+                        <SnippetCard title='print some text' description='9 This code prints some text to STDOUT' image={'assets/img/box.png'} />
                     </SnippetContainer>
                 </div>
                 {
