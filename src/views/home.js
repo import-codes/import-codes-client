@@ -9,6 +9,7 @@ import NavbarTitle from '../components/navbar-title';
 import Sidebar from '../components/sidebar';
 import SnippetCard from '../components/snippet-card';
 import SnippetContainer from '../components/snippet-container';
+import SnippetDetail from '../components/snippet-detail';
 
 class Home extends React.Component {
     constructor(props) {
@@ -69,20 +70,19 @@ class Home extends React.Component {
                         </div>
                     </Sidebar>
                     <SnippetContainer>
-                        <SnippetCard title='Print text' description='This code prints text to debugger console' image={'assets/img/box.png'} />
-                        <SnippetCard title='print some text' description='2 This code prints some text to STDOUTThis code prints some text to STDOUTThis code prints some text to STDOUTThis code prints some text to STDOUTThis code prints some text to STDOUTThis code prints some text to STDOUTThis code prints some text to STDOUT' image={'assets/img/box.png'} />
-                        <SnippetCard title='print some text' description='3 This code prints some text to STDOUT' image={'assets/img/box.png'} />
-                        <SnippetCard title='print some text' description='4 This code prints some text to STDOUT' image={'assets/img/box.png'} />
-                        <SnippetCard title='print some text' description='5 This code prints some text to STDOUT' image={'assets/img/box.png'} />
-                        <SnippetCard title='print some text' description='6 This code prints some text to STDOUT' image={'assets/img/box.png'} />
-                        <SnippetCard title='print some text' description='7 This code prints some text to STDOUT' image={'assets/img/box.png'} />
-                        <SnippetCard title='print some text' description='8 This code prints some text to STDOUT' image={'assets/img/box.png'} />
-                        <SnippetCard title='print some text' description='9 This code prints some text to STDOUT' image={'assets/img/box.png'} />
+                        <SnippetCard title='Print text' description='This code prints text to debugger console' image='assets/img/box.png' />
+                        <SnippetCard title='print some text' description='2 This code prints some text to STDOUTThis code prints some text to STDOUTThis code prints some text to STDOUTThis code prints some text to STDOUTThis code prints some text to STDOUTThis code prints some text to STDOUTThis code prints some text to STDOUT' image='assets/img/box.png' />
+                        <SnippetCard title='print some text' description='3 This code prints some text to STDOUT' image='assets/img/box.png' />
+                        <SnippetCard title='print some text' description='4 This code prints some text to STDOUT' image='assets/img/box.png' />
+                        <SnippetCard title='print some text' description='5 This code prints some text to STDOUT' image='assets/img/box.png' />
+                        <SnippetCard title='print some text' description='6 This code prints some text to STDOUT' image='assets/img/box.png' />
+                        <SnippetCard title='print some text' description='7 This code prints some text to STDOUT' image='assets/img/box.png' />
+                        <SnippetCard title='print some text' description='8 This code prints some text to STDOUT' image='assets/img/box.png' />
+                        <SnippetCard title='print some text' description='9 This code prints some text to STDOUT' image='assets/img/box.png' />
                     </SnippetContainer>
                 </div>
-                {
-                    // <SnippetDetail  />
-                }
+
+                <SnippetDetail image='assets/img/box.png' />
             </div>
         );
     }

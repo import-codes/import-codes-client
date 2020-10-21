@@ -8,7 +8,7 @@ export default function Modal(props) {
                     <div class='absolute inset-0 bg-gray-500 opacity-75'></div>
                 </div>
                 <span class='hidden sm:inline-block sm:align-middle sm:h-screen'></span>
-                <div class='inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full' role='dialog' aria-modal='true' aria-labelledby='modal-headline'>
+                <div class='inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all my-8 align-middle max-w-screen-xl w-full' role='dialog' aria-modal='true' aria-labelledby='modal-headline'>
                     {props.children}
                 </div>
             </div>
