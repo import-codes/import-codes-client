@@ -36,6 +36,21 @@ class Home extends React.Component {
     }
 
     render() {
+        const text = `
+        <div className='grid grid-cols-3'>
+            <img src={props.image} alt='Snippet' />
+            <code class='px-4 pt-5 pb-4 sm:p-6 sm:pb-4' >
+            </code>
+            <div class='bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse'>
+                <span class='flex w-full rounded-md shadow-sm sm:ml-3 sm:w-auto'>
+                    <Button text='Copy' />
+                </span>
+                <span class='mt-3 flex w-full rounded-md shadow-sm sm:mt-0 sm:w-auto'>
+                    <Button text='Share' />
+                </span>
+            </div>
+        </div>`;
+
         return (
             <div className='antialiased'>
                 <Navbar>
@@ -51,7 +66,7 @@ class Home extends React.Component {
                             onChange={this.handleSearchChange}
                         />
                         <div>
-                            <img class='inline-block h-10 w-10 rounded-full text-white shadow-solid object-center object-cover' src='assets/img/box.png' alt='' />
+                            <img className='inline-block h-10 w-10 rounded-full text-white shadow-solid object-center object-cover' src='assets/img/box.png' alt='' />
                         </div>
                     </NavbarContainer>
                 </Navbar>
@@ -82,7 +97,7 @@ class Home extends React.Component {
                     </SnippetContainer>
                 </div>
 
-                <SnippetDetail image='assets/img/box.png' />
+                <SnippetDetail author='uselessscat' title='Print some text' image='assets/img/box.png' code={text} />
             </div>
         );
     }

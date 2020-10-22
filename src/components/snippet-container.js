@@ -18,7 +18,7 @@ class SnippetContainer extends React.Component {
             this.columns[column].push(this.props.children[i])
         }
 
-        const colComponents = this.columns.map(c => <div className='flow flow-cols space-y-4'>{c}</div>)
+        const colComponents = this.columns.map((c, i) => <div key={i} className='flow flow-cols space-y-4'>{c}</div>)
 
         return (
             <main className='grid place-items-start p-4 gap-4 grid-cols-4'>
