@@ -36,32 +36,35 @@ export default function SnippetDetail(props) {
                     </div>
                 </div>
             </div>
-            <div>
-                <nav className='flex'>
-                    <div className='flex-1 items-center px-2 py-2 border border-gray-300'>
-                        Resources
-                    </div>
-                    <div className='flex-1 items-center px-4 py-2 -ml-px border border-gray-300'>
-                        Code
-                    </div>
-                    <div className='flex-1 items-center px-2 py-2 -ml-px border border-gray-300'>
-                        Documentation
-                    </div>
-                </nav>
-            </div>
             <div className='grid grid-cols-3'>
-                <img src={props.image} alt='Snippet' />
-                <code id='hello' className='px-4 pt-5 pb-4 sm:p-6 sm:pb-4'>
-                    {props.code}
-                </code>
-                <div className='bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse'>
-                    <span className='flex w-full rounded-md shadow-sm sm:ml-3 sm:w-auto'>
-                        <Button text='Copy' />
-                    </span>
-                    <span className='mt-3 flex w-full rounded-md shadow-sm sm:mt-0 sm:w-auto'>
-                        <Button text='Share' />
-                    </span>
+                <div className='flex-1 items-center px-2 py-2 border border-gray-300'>
+                    <span>Resources</span>
                 </div>
+                <div className='flex-1 items-center px-4 py-2 -ml-px border border-gray-300'>
+                    <span>Code</span>
+                </div>
+                <div className='flex-1 items-center px-2 py-2 -ml-px border border-gray-300'>
+                    <span>Documentation</span>
+                </div>
+                <div>
+                    <img src={props.image} alt='Snippet' />
+                </div>
+                <div>
+                    <code className='font-mono px-4 pt-5 pb-4 sm:p-6 sm:pb-4'>
+                        {props.code}
+                    </code>
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div className='bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse'>
+                <span className='flex w-full rounded-md shadow-sm sm:ml-3 sm:w-auto'>
+                    <Button text='Copy' />
+                </span>
+                <span className='mt-3 flex w-full rounded-md shadow-sm sm:mt-0 sm:w-auto'>
+                    <Button text='Share' />
+                </span>
             </div>
         </Modal>
     );

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 import * as serviceWorker from './service-worker';
 
-import './css/tailwind.output.css';
+import './assets/css/tailwind.output.css';
 
 import StoreProvider from './redux/provider'
 import Router from './routing/router';

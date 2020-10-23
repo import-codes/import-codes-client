@@ -3,4 +3,5 @@
 
 # builds
 build/
-css/*.output.css
+
+assets/css/*.output.css
