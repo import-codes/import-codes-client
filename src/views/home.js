@@ -36,8 +36,7 @@ class Home extends React.Component {
     }
 
     render() {
-        const text = `
-        <div className='grid grid-cols-3'>
+        const text = `<div className='grid grid-cols-3'>
             <img src={props.image} alt='Snippet' />
             <code class='px-4 pt-5 pb-4 sm:p-6 sm:pb-4' >
             </code>

@@ -49,8 +49,8 @@ export default function SnippetDetail(props) {
                 <div>
                     <img src={props.image} alt='Snippet' />
                 </div>
-                <div>
-                    <code className='font-mono px-4 pt-5 pb-4 sm:p-6 sm:pb-4'>
+                <div className='p-4'>
+                    <code className='font-mono'>
                         {props.code}
                     </code>
                 </div>
