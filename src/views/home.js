@@ -99,8 +99,9 @@ class Home extends React.Component {
                 <SnippetDetail
                     author='uselessscat'
                     package='Print some text'
-                    imageList={['assets/img/box.png']}
+                    images={['assets/img/box.png']}
                     code={text}
+                    docs={'this is an example.'}
                 />
             </div>
         );

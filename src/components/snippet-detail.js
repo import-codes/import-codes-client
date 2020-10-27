@@ -15,7 +15,9 @@ export default function SnippetDetail(props) {
                 files={props.files}
             />
             <SnippetDetailBody 
-                imageList={props.imageList}
+                images={props.images}
+                code={props.code}
+                docs={props.docs}
             />
             <div className='bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse'>
                 <span className='flex w-full rounded-md shadow-sm sm:ml-3 sm:w-auto'>

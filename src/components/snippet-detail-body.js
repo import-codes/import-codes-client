@@ -28,7 +28,7 @@ export default function SnippetDetailBody(props) {
                 </code>
             </div>
             <div>
-                asdasd
+                {props.docs}
             </div>
         </div>
     );
