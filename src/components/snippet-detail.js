@@ -7,7 +7,7 @@ import SnippetDetailBody from './snippet-detail-body';
 
 export default function SnippetDetail(props) {
     return (
-        <Modal>
+        <Modal hidden={props.hidden}>
             <SnippetDetailHeader
                 author={props.author}
                 package={props.package}
@@ -15,7 +15,6 @@ export default function SnippetDetail(props) {
                 files={props.files}
             />
             <SnippetDetailBody 
-                images={props.images}
                 code={props.code}
                 docs={props.docs}
             />

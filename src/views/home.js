@@ -35,6 +35,10 @@ class Home extends React.Component {
         this.setState({ searchContent: event.target.value });
     }
 
+    handleViewBoxDetails = (event, id) => {
+        console.log(id)
+    }
+
     render() {
         const text = `<div className='grid grid-cols-3'>
             <img src={props.image} alt='Snippet' />
@@ -84,22 +88,22 @@ class Home extends React.Component {
                         </div>
                     </Sidebar>
                     <SnippetContainer>
-                        <SnippetCard title='Print text' description='This code prints text to debugger console' image='assets/img/box.png' />
-                        <SnippetCard title='print some text' description='2 This code prints some text to STDOUTThis code prints some text to STDOUTThis code prints some text to STDOUTThis code prints some text to STDOUTThis code prints some text to STDOUTThis code prints some text to STDOUTThis code prints some text to STDOUT' image='assets/img/box.png' />
-                        <SnippetCard title='print some text' description='3 This code prints some text to STDOUT' image='assets/img/box.png' />
-                        <SnippetCard title='print some text' description='4 This code prints some text to STDOUT' image='assets/img/box.png' />
-                        <SnippetCard title='print some text' description='5 This code prints some text to STDOUT' image='assets/img/box.png' />
-                        <SnippetCard title='print some text' description='6 This code prints some text to STDOUT' image='assets/img/box.png' />
-                        <SnippetCard title='print some text' description='7 This code prints some text to STDOUT' image='assets/img/box.png' />
-                        <SnippetCard title='print some text' description='8 This code prints some text to STDOUT' image='assets/img/box.png' />
-                        <SnippetCard title='print some text' description='9 This code prints some text to STDOUT' image='assets/img/box.png' />
+                        <SnippetCard id={1} handleView={this.handleViewBoxDetails} title='Print text' description='This code prints text to debugger console' image='assets/img/box.png' />
+                        <SnippetCard id={2} handleView={this.handleViewBoxDetails} title='print some text' description='2 This code prints some text to STDOUTThis code prints some text to STDOUTThis code prints some text to STDOUTThis code prints some text to STDOUTThis code prints some text to STDOUTThis code prints some text to STDOUTThis code prints some text to STDOUT' image='assets/img/box.png' />
+                        <SnippetCard id={3} handleView={this.handleViewBoxDetails} title='print some text' description='3 This code prints some text to STDOUT' image='assets/img/box.png' />
+                        <SnippetCard id={4} handleView={this.handleViewBoxDetails} title='print some text' description='4 This code prints some text to STDOUT' image='assets/img/box.png' />
+                        <SnippetCard id={5} handleView={this.handleViewBoxDetails} title='print some text' description='5 This code prints some text to STDOUT' image='assets/img/box.png' />
+                        <SnippetCard id={6} handleView={this.handleViewBoxDetails} title='print some text' description='6 This code prints some text to STDOUT' image='assets/img/box.png' />
+                        <SnippetCard id={7} handleView={this.handleViewBoxDetails} title='print some text' description='7 This code prints some text to STDOUT' image='assets/img/box.png' />
+                        <SnippetCard id={8} handleView={this.handleViewBoxDetails} title='print some text' description='8 This code prints some text to STDOUT' image='assets/img/box.png' />
+                        <SnippetCard id={9} handleView={this.handleViewBoxDetails} title='print some text' description='9 This code prints some text to STDOUT' image='assets/img/box.png' />
                     </SnippetContainer>
                 </div>
 
                 <SnippetDetail
+                    hidden={true}
                     author='uselessscat'
                     package='Print some text'
-                    images={['assets/img/box.png']}
                     code={text}
                     docs={'this is an example.'}
                 />
