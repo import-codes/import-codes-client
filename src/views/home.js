@@ -10,6 +10,7 @@ import Sidebar from '../components/sidebar';
 import SnippetCard from '../components/snippet-card';
 import SnippetContainer from '../components/snippet-container';
 import SnippetDetail from '../components/snippet-detail';
+import UserProfile from '../components/user-profile';
 
 class Home extends React.Component {
     constructor(props) {
@@ -55,7 +56,7 @@ class Home extends React.Component {
         </div>`;
 
         return (
-            <div className='antialiased'>
+            <div className='antialiased font-sans'>
                 <Navbar>
                     <NavbarContainer className='flex-shrink-0 w-1/5 px-5'>
                         <NavbarLogo />
@@ -69,22 +70,24 @@ class Home extends React.Component {
                             onChange={this.handleSearchChange}
                         />
                         <div>
-                            <img className='inline-block h-10 w-10 rounded-full text-white shadow-solid object-center object-cover' src='assets/img/box.png' alt='' />
+                            <img className='inline-block h-10 w-10 rounded-full object-center object-cover' src='assets/img/box.png' alt='' />
                         </div>
                     </NavbarContainer>
                 </Navbar>
                 <div className='flex'>
                     <Sidebar>
-                        <div className='uppercase font-bold text-xs px-4 py-2'>Main</div>
-                        <div className=''>
-                            <Link to='#' className='block items-center text-left shadow-light py-6 xl:py-2 xl:px-4'>
-                                <div className='text-xs'>Dashboard</div>
-                            </Link>
-                        </div>
-                        <div className=''>
-                            <Link to='#' className='block items-center text-left shadow-light py-6 xl:py-2 xl:px-4'>
-                                <div className='text-xs'>Notifications</div>
-                            </Link>
+                        <UserProfile />
+                        <div>
+                            <div className=''>
+                                <Link to='#'>
+                                    <span>Dashboard</span>
+                                </Link>
+                            </div>
+                            <div className=''>
+                                <Link to='#'>
+                                    <span>Notifications</span>
+                                </Link>
+                            </div>
                         </div>
                     </Sidebar>
                     <SnippetContainer>
